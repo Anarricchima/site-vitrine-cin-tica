@@ -1,4 +1,3 @@
-HTML
 <div align="center">
   <h1>Vitrine Cinética</h1>
   <p>Este repositório organiza a estrutura inicial do projeto e configura o ambiente de desenvolvimento para as atividades da Cinética, servindo como prática de controle de versão com Git e GitHub para futuros projetos colaborativos.</p>
