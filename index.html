@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicácio Coffee</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+<div id="principal">
+    <header id="topo">
+        <div id="logo"> 
+            <a href="index.html"><img src="img/logo.png" alt="Logo da Loja"></a> 
+        </div>
+    </header>
+    <nav id="menu_principal"> 
+        <div id="menu_item">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="servicos.html">Serviços</a>
+            <a class="link" href="cardapio.html">Cardápio</a>
+        </div>
+    </nav>
+    <main id="conteudo"> 
+        <section id="hero-section">
+            <h1>Bem-vindo ao Nicácio Coffee</h1>
+            <p>Conectando tecnologia, jogos em rede e os melhores pratos da região.</p>
+            <a href="cardapio.html" class="btn-hero">Ver Cardápio</a>
+        </section>
+        <div id="menu_servicos">
+            <ul>
+                <li>Internet</li> 
+                <li>Jogos em Rede</li>
+                <li>Impressão</li>
+                <li>Scanner</li>
+                <li>Gravação em CD/DVD</li> 
+                <li>Back-up</li>
+                <li>Bate-Papo</li>
+            </ul>
+        </div>
+        <section id="novidades"> 
+            <h1>Novidades</h1>
+            <img src="img/novidades.jpg" alt="Novidades"> 
+            <h2>Novos pratos no Cardápio</h2>
+            <p>A Nicácio Coffee acaba de incluir novos cafés especiais e artesanais selecionados em seu cardápio para você experimentar.</p>
+            <a href="cardapio.html">leia+</a>
+        </section>
+        <div class="clear"></div>
+        <div id="rodape_interativo">
+            <section id="contato-secao">
+                <h1>Fale Conosco</h1>
+                <form action="#" method="POST" id="form-contato">
+                    <div class="campo-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </section>
+            <div id="atendimento">
+                <h1>Atendimento</h1>
+                <p>28 <span>4002-8922</span></p>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+</body>
+</html>

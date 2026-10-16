@@ -1,0 +1,475 @@
+/* --- RESET E GERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/fundo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* --- ESTRUTURA PRINCIPAL --- */
+#principal {
+    width: 100%;
+    max-width: 1024px;
+    min-height: 900px;
+    margin: auto;
+} 
+
+/* TOPO COM LOGO CENTRALIZADA */
+#topo {
+    width: 100%;
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+#logo {
+    width: 186px;
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    max-height: 100%;
+}
+
+#menu_principal {
+    width: 100%;
+    height: 49px;
+    background-image: url("img/menu_principal.jpg");
+    float: none;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_item {
+    width: auto;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.link {
+    display: block;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #1A1A1A;
+    font-weight: bold;
+    margin: 0;
+    float: none;
+}
+
+.link:hover {
+    color: #ffffff;
+}
+
+/* --- ÁREA DE CONTEÚDO --- */
+#conteudo {
+    width: min(780px, calc(100% - 32px));
+    min-height: 620px;
+    background-image: url("img/fundo_conteudo.png");
+    clear: both;
+    margin: 10px auto 0;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+/* --- HERO SECTION --- */
+#hero-section {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    float: left;
+}
+
+#hero-section h1 {
+    font-size: 22px;
+    color: #FFCC00;
+    margin-bottom: 8px;
+}
+
+#hero-section p {
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: #FFCC00;
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* --- COLUNAS INTERNAS --- */
+#menu_servicos {
+    width: 220px;
+    height: 255px;
+    background-image: url("img/fundo_servicos.png");
+    float: left;
+    padding: 15px;
+}
+
+#novidades {
+    width: 480px;
+    height: 255px;
+    float: left;
+    margin-left: 20px;
+}
+
+#novidades img {
+    max-width: 100%;
+    height: auto;
+}
+
+#rodape_interativo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+    clear: both;
+}
+
+#contato-secao {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-form label {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.campo-form input, 
+.campo-form textarea {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.btn-submit {
+    background: #FFCC00;
+    color: #333;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#atendimento {
+    width: 200px;
+    height: 78px;
+    background-image: url("img/fundo_atendimento.png");
+    background-size: cover;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+#atendimento span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 18px;
+    color: #FFCC00;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 13px;
+    color: #FFCC00;
+    margin-bottom: 5px;
+}
+
+p, li {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #FFCC00;
+    text-decoration: none;
+}
+
+#conteudo.pagina-cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-content: start;
+    gap: 20px;
+}
+
+.pagina-cardapio .cardapio {
+    width: auto;
+    min-width: 0;
+    height: auto;
+    margin: 0;
+    float: none;
+}
+
+.pagina-cardapio .cardapio img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.pagina-cardapio .cardapio h1 {
+    margin-top: 10px;
+}
+
+.foto_cafe,
+.foto_capuccino,
+.foto_milkshake {
+    border: 4px solid #ffffff;
+}
+
+.foto_cafe:hover {
+    border-color: #571818;
+}
+
+.foto_capuccino:hover {
+    border-color: #d6a147;
+}
+
+.foto_milkshake:hover {
+    border-color: #634a3d;
+}
+
+.divisao {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.texto_servicos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+@media (max-width: 760px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    #principal {
+        min-height: 100vh;
+    }
+
+    #topo {
+        height: clamp(120px, 32vw, 160px);
+    }
+
+    #logo {
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+    }
+
+    #logo img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    #menu_principal {
+        height: auto;
+        min-height: 52px;
+        margin-top: 8px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #menu_item {
+        width: 100%;
+        height: auto;
+        min-height: 52px;
+        justify-content: center;
+        gap: clamp(14px, 3vw, 24px);
+        padding: 0 8px;
+    }
+
+    #menu_item > a {
+        display: block;
+        padding: 10px 4px;
+    }
+
+    .link {
+        font-size: clamp(16px, 4vw, 20px);
+        white-space: nowrap;
+    }
+
+    #conteudo {
+        width: calc(100% - 24px);
+        min-height: 0;
+        margin: 12px auto;
+        padding: 14px;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    #hero-section {
+        float: none;
+    }
+
+    #menu_servicos {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        float: none;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #menu_servicos ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px 12px;
+    }
+
+    #menu_servicos li {
+        margin: 0;
+    }
+
+    #novidades {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 16px 0 0;
+    }
+
+    #novidades img {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    #rodape_interativo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    #contato-secao {
+        width: 100%;
+        flex: none;
+    }
+
+    #atendimento {
+        width: 100%;
+        height: auto;
+        min-height: 78px;
+        background-position: center;
+    }
+
+    #conteudo.pagina-cardapio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .divisao {
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #topo {
+        height: 120px;
+    }
+
+    #logo {
+        height: 120px;
+    }
+
+    #logo img {
+        max-height: 88px;
+        width: auto;
+    }
+
+    #menu_item {
+        justify-content: center;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+    #conteudo {
+        width: calc(100% - 16px);
+        margin: 8px auto;
+        padding: 12px;
+    }
+
+    #hero-section {
+        padding: 14px 10px;
+    }
+
+    #hero-section h1 {
+        font-size: 20px;
+    }
+
+    #menu_servicos ul {
+        gap: 10px 8px;
+    }
+
+    #conteudo.pagina-cardapio {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pagina-cardapio .cardapio {
+        width: 100%;
+        max-width: 320px;
+        justify-self: center;
+    }
+}
