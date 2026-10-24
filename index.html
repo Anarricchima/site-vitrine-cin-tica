@@ -13,7 +13,12 @@
             <a href="index.html"><img src="img/logo.png" alt="Logo da Loja"></a> 
         </div>
     </header>
-    <nav id="menu_principal"> 
+    <nav id="menu_principal" class="menu-open" aria-label="Navegação principal"> 
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="true" aria-controls="menu_item">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div id="menu_item">
             <a class="link" href="index.html">Home</a>
             <a class="link" href="servicos.html">Serviços</a>
@@ -63,6 +68,7 @@
                     </div>
                     <button type="submit" class="btn-submit">Enviar</button>
                 </form>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             </section>
             <div id="atendimento">
                 <h1>Atendimento</h1>
@@ -74,5 +80,6 @@
     </main>
 
 </div>
+<script src="script.js"></script>
 </body>
 </html>
